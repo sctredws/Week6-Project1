@@ -1,6 +1,13 @@
+:root {
+    --bg-color: hsl(0, 0%, 100%, 0.75);
+    --txt-color: hsl(0, 0%, 100%, 0.75);
+    --head-txt: 'Big Shoulders Display', cursive;
+    --context: 'Lexend Deca', sans-serif;
+}
+
 
 body {
-    background-color: hsl(0, 0%, 95%);
+    background-color: var(--bg-color);
 }
 
 .container {
@@ -9,13 +16,17 @@ body {
     flex: 1;
     width: 60%;
     height: 60vh;
-    border-style: solid;
-    border-color: chartreuse;
+    color: var(--txt-color);
     
 }
 
 .container > div {
     flex: 1;
+}
+
+.headline {
+    font-family: var(--head-txt);
+
 }
 
 .sedans {
@@ -24,15 +35,25 @@ body {
     justify-content:space-evenly;
     flex: 1;
     background-color: hsl(31, 77%, 52%);
-    color: hsl(0, 0%, 100%, 0.75);
+    font-family: var(--context);
+    
 }
 
 .suvs {
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    flex: 1;
     background-color: hsl(184, 100%, 22%);
-    color: hsl(0, 0%, 100%, 0.75);
+    font-family: var(--context);
 }
 
 .luxury {
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    flex: 1;
     background-color: hsl(179, 100%, 13%);
-    color: hsl(0, 0%, 100%, 0.75);
+    font-family: var(--context);
+
 }
