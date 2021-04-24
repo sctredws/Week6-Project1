@@ -24,6 +24,7 @@ body {
     font-size: 15px;
     margin: 100px auto;
     justify-content: center;
+    border-radius: 10px;
 }
 
 .container > div {
@@ -102,4 +103,13 @@ body {
     .container {
         flex-direction: column;
     }
+}
+
+
+@media screen and (max-width: 800px) {
+    .container {
+        font-size: 10px;
+
+    }
+
 }
