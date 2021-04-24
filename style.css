@@ -1,13 +1,16 @@
 :root {
-    --bg-color: hsl(0, 0%, 100%, 0.75);
+    --bg-color: hsl(0, 0%, 95%);
     --txt-color: hsl(0, 0%, 100%, 0.75);
     --head-txt: 'Big Shoulders Display', cursive;
     --context: 'Lexend Deca', sans-serif;
+    --fntsz: 30px;
+    --borad: 20px;
 }
 
 
 body {
     background-color: var(--bg-color);
+    
 }
 
 .container {
@@ -17,7 +20,10 @@ body {
     width: 60%;
     height: 60vh;
     color: var(--txt-color);
-    
+    line-height: 1.6;
+    font-size: 15px;
+    margin: 100px auto;
+    justify-content: center;
 }
 
 .container > div {
@@ -26,6 +32,7 @@ body {
 
 .headline {
     font-family: var(--head-txt);
+    font-size: var(--fntsz);
 
 }
 
@@ -34,6 +41,7 @@ body {
     flex-direction: column;
     justify-content:space-evenly;
     flex: 1;
+    padding: 20px;
     background-color: hsl(31, 77%, 52%);
     font-family: var(--context);
     
@@ -44,6 +52,7 @@ body {
     flex-direction: column;
     justify-content:space-evenly;
     flex: 1;
+    padding: 20px;
     background-color: hsl(184, 100%, 22%);
     font-family: var(--context);
 }
@@ -53,7 +62,44 @@ body {
     flex-direction: column;
     justify-content:space-evenly;
     flex: 1;
+    padding: 20px;
     background-color: hsl(179, 100%, 13%);
     font-family: var(--context);
 
+}
+
+.sbutton {
+    color: hsl(31, 77%, 52%);
+    background-color: var(--bg-color);
+    font-family: var(--context);
+    border-style: none;
+    border-radius: var(--borad);
+    padding: 10px 20px;
+}
+
+.suvbutton {
+    color: hsl(184, 100%, 22%);
+    background-color: var(--bg-color);
+    font-family: var(--context);
+    border-style: none;
+    border-radius: var(--borad);
+    padding: 10px 20px;
+}
+
+.luxbutton {
+    color: hsl(179, 100%, 13%);
+    background-color: var(--bg-color);
+    font-family: var(--context);
+    border-style: none;
+    border-radius: var(--borad);
+    padding: 10px 20px;
+}
+
+
+
+
+@media screen and (max-width:375px) {
+    .container {
+        flex-direction: column;
+    }
 }
